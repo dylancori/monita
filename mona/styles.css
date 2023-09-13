@@ -1,0 +1,86 @@
+
+.main {
+    max-width: 400px; /* Ancho máximo del contenido principal */
+    margin: 0 auto; /* Centrar el contenido principal */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.message {
+    font-size: 24px;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(45deg, #FF69B4, #FFC0CB, #FFB6C1, #FF69B4, #FFC0CB);
+    animation: gradientBG 3s linear infinite alternate; /* Cambié la duración de la animación a 3 segundos y agregué 'alternate' */
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+.heart {
+    width: 50px;
+    height: 50px;
+    background-image: url('/mona/imagenes/corazon.png'); /* Reemplaza 'corazon.png' con la ruta de tu imagen de corazón */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    animation: float 4s linear infinite;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.2); /* Inicialmente, el cartel es pequeño y no visible */
+    background-color: rgba(248, 81, 209, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 2;
+    text-align: center;
+    animation: popupAppear 0.5s ease-in-out forwards; /* Animación de aparición */
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes popupAppear {
+    0% {
+        transform: translate(-50%, -50%) scale(0.2); /* Inicio: pequeño y no visible */
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1); /* Fin: tamaño completo y visible */
+        opacity: 1;
+    }
+}
