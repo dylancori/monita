@@ -84,3 +84,13 @@ body {
         opacity: 1;
     }
 }
+
+@media (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+    .popup-content {
+        /* Aplica estilos específicos para el contenido del cartel */
+        font-size: 16px;
+        padding: 20px;
+    }
+    /* Otros estilos específicos para dispositivos móviles */
+}
