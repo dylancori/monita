@@ -85,12 +85,16 @@ body {
     }
 }
 
+/* Estilos por defecto */
+.popup-content {
+    font-size: 24px;
+    padding: 40px;
+}
+
+/* Media query para dispositivos móviles */
 @media (max-width: 768px) {
-    /* Estilos para dispositivos móviles */
     .popup-content {
-        /* Aplica estilos específicos para el contenido del cartel */
-        font-size: 16px;
-        padding: 20px;
+        font-size: 12px; /* Reduce el tamaño del texto */
+        padding: 20px; /* Reduce el espaciado */
     }
-    /* Otros estilos específicos para dispositivos móviles */
 }
