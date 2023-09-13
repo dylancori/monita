@@ -94,7 +94,7 @@ body {
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
     .popup-content {
-        font-size: 12px; /* Reduce el tamaño del texto */
+        font-size: 8px; /* Reduce el tamaño del texto */
         padding: 20px; /* Reduce el espaciado */
     }
 }
