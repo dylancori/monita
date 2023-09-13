@@ -29,11 +29,6 @@ function createHeart() {
             popup.style.display = 'flex';
             message.innerText = ''
             clearInterval(heartGenerationInterval);
-           // Cargar los fuegos artificiales
-            particlesJS('particles-js', 'particles.json', function() {
-             console.log('Fuegos artificiales cargados');
-});
-
 
         }
     });
